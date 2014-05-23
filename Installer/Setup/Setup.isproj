@@ -5,6 +5,7 @@
 		<!-- Select a Visual Studio Configuration / InstallShield Release -->
 		<Configuration>Debug</Configuration>
 		<InstallShieldRelease>$(Configuration)</InstallShieldRelease>
+		<InstallShieldPath>C:\Program Files (x86)\InstallShield\2013LE\System</InstallShieldPath>
 	</PropertyGroup>
 	<ItemGroup>
 		<!-- The InstallShieldProject item selects the project to build -->
@@ -26,7 +27,7 @@
 			<TargetPath>My Test Exe.exe</TargetPath>
 		</TaggedOutputs> -->
 	</ItemGroup>
-	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2011Limited\InstallShield.targets"/>
+	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
 	<ItemGroup>
 		<ProjectReference Include="..\Manager\TestWizard\TestWizard.csproj">
 			<Name>TestWizard</Name>
