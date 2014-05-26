@@ -201,7 +201,6 @@
     <Compile Include="WizardSidebar.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <EmbeddedResource Include="Bitmaps\ExampleSidebar.bmp" />
     <EmbeddedResource Include="ExternalWizardPage.resx">
       <DependentUpon>ExternalWizardPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -237,6 +236,9 @@
       <ProductName>Windows Installer 3.1</ProductName>
       <Install>true</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Bitmaps\ExampleSidebar.bmp" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
