@@ -952,7 +952,8 @@
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>1</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>EndDialog</td><td>Return</td><td>OutOfDiskSpace &lt;&gt; 1</td><td>1</td></row>
+		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>0</td><td>1</td></row>
 		<row><td>LicenseAgreement</td><td>Back</td><td>NewDialog</td><td>InstallWelcome</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>LicenseAgreement</td><td>ISPrintButton</td><td>DoAction</td><td>ISPrint</td><td>1</td><td>0</td></row>
@@ -1198,8 +1199,8 @@
 		<row><td>WindowsVolume</td><td>TARGETDIR</td><td>.:WinRoot</td><td/><td>0</td><td/></row>
 		<row><td>_2</td><td>CREDENTIALPROVIDERS</td><td>32</td><td/><td>0</td><td/></row>
 		<row><td>_4</td><td>CREDENTIALPROVIDERS</td><td>64</td><td/><td>0</td><td/></row>
-		<row><td>rfidlo_1_rfid_login_credential_provider</td><td>tylerm_1_tyler_menezes</td><td>RFIDLO~1|Rfid Login Credential Provider</td><td/><td>1</td><td/></row>
-		<row><td>tylerm_1_tyler_menezes</td><td>ProgramMenuFolder</td><td>TYLERM~1|Tyler Menezes</td><td/><td>1</td><td/></row>
+		<row><td>rfidlo_1_rfid_login_credential_provider</td><td>tylerm_1_tyler_menezes</td><td>WinLogin</td><td/><td>1</td><td/></row>
+		<row><td>tylerm_1_tyler_menezes</td><td>ProgramMenuFolder</td><td>NFC-Ring</td><td/><td>1</td><td/></row>
 	</table>
 
 	<table name="DrLocator">
@@ -2703,7 +2704,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761109398</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761074706</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1033</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-761076598</td></row>
@@ -3807,10 +3808,10 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>161447504</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>https://github.com/Robinhuett/NFC-Ring_CredentialProvider/</td><td>0</td><td/><td>-761078965</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761109398</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.RobinTripp.com</td><td>0</td><td/><td>-761074706</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761074706</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>Contact tyler@menez.es for any problems.</td><td>0</td><td/><td>161460401</td></row>
-		<row><td>ID_STRING5</td><td>1033</td><td>NFC-Ring Login Config</td><td>0</td><td/><td>-761080630</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>Config</td><td>0</td><td/><td>-761103346</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>161445456</td></row>
 	</table>
 
@@ -4050,8 +4051,8 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1033</td></row>
 		<row><td>Comments</td><td/></row>
-		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="de9f554a3bc05c12be9c31b998217995">
-UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="a4f66fafb30885f14d732b73e196bba0">
+RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
 		<row><td>ISCompilerOption_CompileBeforeBuild</td><td>1</td></row>

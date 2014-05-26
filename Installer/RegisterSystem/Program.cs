@@ -1,10 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Microsoft.Win32;
+﻿using Microsoft.Win32;
+using System;
 using System.IO;
 using System.Runtime.InteropServices;
+
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
 
 namespace RegisterSystem
 {
@@ -13,7 +14,7 @@ namespace RegisterSystem
         [DllImport("kernel32.dll", SetLastError = true)]
         public static extern bool Wow64DisableWow64FsRedirection(ref IntPtr ptr);
 
-         [DllImport("kernel32.dll", SetLastError=true)]
+        [DllImport("kernel32.dll", SetLastError=true)]
         public static extern bool Wow64EnableWow64FsRedirection(ref IntPtr ptr);
 
         private static bool isBoxed = (!Environment.Is64BitProcess && Environment.Is64BitOperatingSystem);
@@ -22,19 +23,19 @@ namespace RegisterSystem
         {
             try
             {
-                Console.WriteLine("Generating Registry Structure...");
+                //Console.WriteLine("Generating Registry Structure...");
                 RegistryKey Base = Software.CreateSubKey("NFC-Ring");
                 Base = Base.CreateSubKey("WinLogin");
 
-                Console.WriteLine("Adding default configuration...");
+                //Console.WriteLine("Adding default configuration...");
                 Base.SetValue("Port", "COM3");
                 Base.SetValue("Message Start", 0x02);
                 Base.SetValue("Message End", 0x0d);
 
-                Console.WriteLine("Reversing Entropy...");
+                //Console.WriteLine("Reversing Entropy...");
                 string randomSalt = Hash(((new Random()).Next(int.MaxValue) + DateTime.Now.Ticks).ToString());
 
-                Console.WriteLine("Enumerating the null set...");
+                //Console.WriteLine("Enumerating the null set...");
                 Base = Base.CreateSubKey("Keys");
                 Base.SetValue("Salt", randomSalt);
 

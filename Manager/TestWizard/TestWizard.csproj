@@ -212,8 +212,8 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Content Include="App.ico" />
-    <Content Include="Icon.ico" />
     <EmbeddedResource Include="Bitmaps\Sidebar.bmp" />
+    <Content Include="Icon.ico" />
     <EmbeddedResource Include="CompletePage.resx">
       <DependentUpon>CompletePage.cs</DependentUpon>
     </EmbeddedResource>

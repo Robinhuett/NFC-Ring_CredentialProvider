@@ -51,33 +51,34 @@ namespace TestWizard
             // Sidebar
             // 
             this.Sidebar.Size = new System.Drawing.Size(165, 320);
+            this.Sidebar.Load += new System.EventHandler(this.Sidebar_Load);
             // 
             // titleLabel
             // 
-            this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.titleLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titleLabel.Location = new System.Drawing.Point(176, 4);
             this.titleLabel.Name = "titleLabel";
             this.titleLabel.Size = new System.Drawing.Size(288, 28);
             this.titleLabel.TabIndex = 1;
-            this.titleLabel.Text = "RFID Credential Manager";
+            this.titleLabel.Text = "NFC-Ring Credential Manager";
             // 
             // introductionLabel
             // 
-            this.introductionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.introductionLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.introductionLabel.Location = new System.Drawing.Point(176, 40);
             this.introductionLabel.Name = "introductionLabel";
             this.introductionLabel.Size = new System.Drawing.Size(288, 44);
             this.introductionLabel.TabIndex = 2;
             this.introductionLabel.Text = "This tool will allow you to manage credentials associated with this computer, and" +
-                " to associate new credentials.";
+    " to associate new credentials.";
             // 
             // promptLabel
             // 
-            this.promptLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.promptLabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.promptLabel.Location = new System.Drawing.Point(176, 296);
             this.promptLabel.Name = "promptLabel";
             this.promptLabel.Size = new System.Drawing.Size(288, 16);
@@ -111,6 +112,11 @@ namespace TestWizard
 		{
 			this.Sidebar.BackgroundImage = new Bitmap(this.GetType(), "Bitmaps.Sidebar.bmp");
 		}
+
+        private void Sidebar_Load(object sender, EventArgs e)
+        {
+
+        }
 	}
 }
 
