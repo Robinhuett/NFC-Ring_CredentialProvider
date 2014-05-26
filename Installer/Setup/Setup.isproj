@@ -1,4 +1,5 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Project ToolsVersion="3.5" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<!-- Select a Product Configuration -->
 		<InstallShieldProductConfiguration>Express</InstallShieldProductConfiguration>
@@ -29,21 +30,21 @@
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
 	<ItemGroup>
-		<ProjectReference Include="..\Manager\TestWizard\TestWizard.csproj">
+		<ProjectReference Include="..\RegisterSystem\RegisterSystem.csproj">
+			<Name>RegisterSystem</Name>
+			<Project>{392410E4-C8FF-4E9F-BA6F-D791F95A6CDB}</Project>
+		</ProjectReference>
+		<ProjectReference Include="..\..\Manager\TestWizard\TestWizard.csproj">
 			<Name>TestWizard</Name>
 			<Project>{C4C2A78E-01F3-4D2C-A3FB-1C90D8F58033}</Project>
 		</ProjectReference>
-		<ProjectReference Include="..\Manager\Wizard.Controls\Wizard.Controls.csproj">
+		<ProjectReference Include="..\..\Manager\Wizard.Controls\Wizard.Controls.csproj">
 			<Name>Wizard.Controls</Name>
 			<Project>{23AD43FF-38F2-4FEC-9FAA-D7B2FA54492B}</Project>
 		</ProjectReference>
-		<ProjectReference Include="..\Manager\Wizard.UI\Wizard.UI.csproj">
+		<ProjectReference Include="..\..\Manager\Wizard.UI\Wizard.UI.csproj">
 			<Name>Wizard.UI</Name>
 			<Project>{80614F74-563D-418E-9BF6-1294F73521C0}</Project>
-		</ProjectReference>
-		<ProjectReference Include="..\RegisterSystem\RegisterSystem.csproj">
-			<Name>RegisterSystem1</Name>
-			<Project>{392410E4-C8FF-4E9F-BA6F-D791F95A6CDB}</Project>
 		</ProjectReference>
 	</ItemGroup>
 </Project>

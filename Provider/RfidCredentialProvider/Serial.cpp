@@ -8,7 +8,7 @@ Serial::Serial()
 	this->connected = false;
 
 	HKEY hKey;
-	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Tyler Menezes\\Rfid Login", 0, KEY_READ, &hKey) != ERROR_SUCCESS){
+	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\NFC-Ring\\WinLogin", 0, KEY_READ, &hKey) != ERROR_SUCCESS){
 		delete hKey;
 		return; // Token not recognized.
 	}

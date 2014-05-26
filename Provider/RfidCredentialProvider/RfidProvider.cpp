@@ -55,7 +55,7 @@ char* sanatizeRfidReading(char* read){
 	bool hasTransmissionStarted = false;
 
 	HKEY hKey;
-	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, s2ws("SOFTWARE\\Tyler Menezes\\Rfid Login").c_str(), 0, KEY_READ, &hKey) != ERROR_SUCCESS){
+	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, s2ws("SOFTWARE\\NFC-Ring\\WinLogin").c_str(), 0, KEY_READ, &hKey) != ERROR_SUCCESS){
 		delete hKey;
 		return new char;
 	}
@@ -103,7 +103,7 @@ bool doAutoLogin = false;
 void getCredentials(char* token){
 
 	HKEY hKey;
-	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\Tyler Menezes\\Rfid Login\\Keys", 0, KEY_READ, &hKey) != ERROR_SUCCESS){
+	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, L"SOFTWARE\\NFC-Ring\\WinLogin\\Keys", 0, KEY_READ, &hKey) != ERROR_SUCCESS){
 		delete hKey;
 		return; // Token not recognized.
 	}
@@ -120,7 +120,7 @@ void getCredentials(char* token){
 	sha1->ReportHashStl(hash, CSHA1::REPORT_HEX_SHORT);
 	delete sha1;
 
-	std::string key = std::string("SOFTWARE\\Tyler Menezes\\Rfid Login\\Keys\\");
+	std::string key = std::string("SOFTWARE\\NFC-Ring\\WinLogin\\Keys\\");
 	key += ws2s(hash);
 
 	if(RegOpenKeyExW(HKEY_LOCAL_MACHINE, s2ws(key).c_str(), 0, KEY_READ, &hKey) != ERROR_SUCCESS){

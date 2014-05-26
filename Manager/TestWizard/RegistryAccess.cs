@@ -8,7 +8,7 @@ namespace TestWizard
     class RegistryAccess
     {
         private static bool isBoxed = (IntPtr.Size == 4 && !string.IsNullOrEmpty(Environment.GetEnvironmentVariable("PROCESSOR_ARCHITEW6432")));
-        public static readonly RegistryKey Primary = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, (isBoxed) ? RegistryView.Registry64 : RegistryView.Default).OpenSubKey("SOFTWARE\\Tyler Menezes\\Rfid Login", true);
+        public static readonly RegistryKey Primary = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, (isBoxed) ? RegistryView.Registry64 : RegistryView.Default).OpenSubKey("SOFTWARE\\NFC-Ring\\WinLogin", true);
         private static readonly RegistryKey Keys = Primary.OpenSubKey("Keys", true);
 
         private string RfidToken;

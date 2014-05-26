@@ -23,8 +23,8 @@ namespace RegisterSystem
             try
             {
                 Console.WriteLine("Generating Registry Structure...");
-                RegistryKey Base = Software.CreateSubKey("Tyler Menezes");
-                Base = Base.CreateSubKey("Rfid Login");
+                RegistryKey Base = Software.CreateSubKey("NFC-Ring");
+                Base = Base.CreateSubKey("WinLogin");
 
                 Console.WriteLine("Adding default configuration...");
                 Base.SetValue("Port", "COM3");
@@ -40,8 +40,8 @@ namespace RegisterSystem
 
                 Console.WriteLine("Doing magical Windows-y things...");
                 string provider = (Environment.Is64BitOperatingSystem)? "64" : "32";
-                provider = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + "\\CredentialProviders\\" + provider + "\\RfidCredentialProvider.dll";
-                string to = Environment.GetEnvironmentVariable("SystemRoot") + "\\System32\\RfidCredentialProvider.dll";
+                provider = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetEntryAssembly().Location) + "\\CredentialProviders\\" + provider + "\\NfcRingCredentialProvider.dll";
+                string to = Environment.GetEnvironmentVariable("SystemRoot") + "\\System32\\NfcRingCredentialProvider.dll";
 
                 IntPtr p = new IntPtr();
 
