@@ -27,7 +27,8 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
-*.ipch
+ipch/
 *.htm
 *.txt
 *.opensdf
+*.sdf
