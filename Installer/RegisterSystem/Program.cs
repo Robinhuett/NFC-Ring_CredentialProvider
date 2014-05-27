@@ -18,7 +18,6 @@ namespace RegisterSystem
         public static extern bool Wow64EnableWow64FsRedirection(ref IntPtr ptr);
 
         private static bool isBoxed = (!Environment.Is64BitProcess && Environment.Is64BitOperatingSystem);
-        //public static readonly RegistryKey Software = RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, (isBoxed) ? RegistryView.Registry64 : RegistryView.Default).OpenSubKey("SOFTWARE", true);
 
         static void Main(string[] args)
         {
