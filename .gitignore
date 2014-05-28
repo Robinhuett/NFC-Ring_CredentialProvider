@@ -32,3 +32,6 @@ ipch/
 *.txt
 *.opensdf
 *.sdf
+*.sdf
+Installer/Setup/Setup/
+packages/repositories.config
