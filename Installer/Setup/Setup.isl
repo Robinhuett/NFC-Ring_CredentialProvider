@@ -267,6 +267,7 @@
 		<row><td>NewBinary2</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\New.ibd</td></row>
 		<row><td>NewBinary20</td><td/><td>&lt;ISProjectFolder&gt;\welcome.jpg</td></row>
 		<row><td>NewBinary21</td><td/><td>&lt;ISProjectFolder&gt;\banner.jpg</td></row>
+		<row><td>NewBinary22</td><td/><td>&lt;ISProductFolder&gt;\redist\Language independent\i386\SerialNumCAHelper.dll</td></row>
 		<row><td>NewBinary3</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\Up.ibd</td></row>
 		<row><td>NewBinary4</td><td/><td>&lt;ISProductFolder&gt;\Redist\Language Independent\OS Independent\WarningIcon.ibd</td></row>
 		<row><td>NewBinary5</td><td/><td>&lt;ISProjectFolder&gt;\welcome.jpg</td></row>
@@ -349,6 +350,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td>{C2BE409E-B96F-49C1-8018-5782519D3E61}</td><td>CREDENTIALPROVIDERS</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td>{3256AB37-FF99-44EA-9975-A9E79880118E}</td><td>_4</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td>{950895D4-F82E-46CF-B8A2-7BBBC4F48129}</td><td>_2</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>LoginManager.Prim_re_Ausgabe</td><td>{BEEBEA5C-5757-494C-9D10-B5C5733DF108}</td><td>INSTALLDIR</td><td>2</td><td/><td>loginmanager.prim_re_ausgabe</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
+		<row><td>NewComponent1</td><td>{E77CE3AD-D626-4698-8FFE-62A6908831F3}</td><td>INSTALLDIR</td><td>2</td><td/><td/><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>NfcRingCredentialProvider.dll</td><td>{A486855A-1319-490C-98B8-8755072E1FA3}</td><td>_2</td><td>2</td><td/><td>nfcringcredentialprovider.dl</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>NfcRingCredentialProvider.dll1</td><td>{FAA71F85-3BB8-4298-AF8B-FF45EF5B3C39}</td><td>_4</td><td>2</td><td/><td>nfcringcredentialprovider.dl1</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
 		<row><td>RegisterSystem.Primary_output</td><td>{FADD2814-2645-4CBB-8FEF-B11D385AECA2}</td><td>TempFolder</td><td>2</td><td/><td>registersystem.primary_outpu</td><td>17</td><td/><td/><td/><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td><td>/LogFile=</td></row>
@@ -546,7 +549,7 @@
 		<row><td>InstallChangeFolder</td><td>Tail</td><td>PathEdit</td><td>21</td><td>207</td><td>332</td><td>17</td><td>15</td><td>_BrowseProperty</td><td>##IDS__IsBrowseFolderDlg_11##</td><td>OK</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallChangeFolder</td><td>TailText</td><td>Text</td><td>21</td><td>193</td><td>99</td><td>13</td><td>3</td><td/><td>##IDS__IsBrowseFolderDlg_FolderName##</td><td>Tail</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallChangeFolder</td><td>Up</td><td>PushButton</td><td>310</td><td>66</td><td>19</td><td>19</td><td>3670019</td><td/><td/><td>NewFolder</td><td>##IDS__IsBrowseFolderDlg_UpOneLevel##</td><td>0</td><td/><td/><td>NewBinary3</td></row>
-		<row><td>InstallWelcome</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_BACK##</td><td>Copyright</td><td/><td>0</td><td/><td/><td/></row>
+		<row><td>InstallWelcome</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>1</td><td/><td>##IDS_BACK##</td><td>Copyright</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>PushButton</td><td>301</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_CANCEL##</td><td>Back</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Copyright</td><td>Text</td><td>135</td><td>144</td><td>228</td><td>73</td><td>65539</td><td/><td>##IDS__IsWelcomeDlg_WarningCopyright##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>DlgLine</td><td>Line</td><td>0</td><td>234</td><td>374</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
@@ -1067,6 +1070,7 @@
 		<col key="yes" def="s72">Component_</col>
 		<row><td>CREDENTIALPROVIDERS</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>INSTALLDIR</td><td>ISX_DEFAULTCOMPONENT1</td></row>
+		<row><td>INSTALLDIR</td><td>NewComponent1</td></row>
 		<row><td>SystemFolder</td><td>ISX_DEFAULTCOMPONENT</td></row>
 		<row><td>TempFolder</td><td>ISX_DEFAULTCOMPONENT2</td></row>
 		<row><td>_2</td><td>ISX_DEFAULTCOMPONENT5</td></row>
@@ -1087,7 +1091,7 @@
 		<row><td>ISSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFiles</td><td/><td/></row>
 		<row><td>ISSelfRegisterFinalize</td><td>1</td><td>ISSELFREG.DLL</td><td>ISSelfRegisterFinalize</td><td/><td/></row>
 		<row><td>ISUnSelfRegisterFiles</td><td>3073</td><td>ISSELFREG.DLL</td><td>ISUnSelfRegisterFiles</td><td/><td/></row>
-		<row><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>1</td><td>NewBinary19</td><td>LaunchProgram</td><td/><td/></row>
+		<row><td>LaunchProgramFileFromSetupCompleteSuccess</td><td>1</td><td>NewBinary22</td><td>LaunchProgram</td><td/><td/></row>
 		<row><td>RegisterSystem</td><td>1042</td><td>registersystem.primary_outpu</td><td/><td/><td/></row>
 		<row><td>SetARPINSTALLLOCATION</td><td>51</td><td>ARPINSTALLLOCATION</td><td>[INSTALLDIR]</td><td/><td/></row>
 		<row><td>SetAllUsersProfileNT</td><td>51</td><td>ALLUSERSPROFILE</td><td>[%SystemRoot]\Profiles\All Users</td><td/><td/></row>
@@ -1897,6 +1901,8 @@
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT3</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT4</td></row>
 		<row><td>AlwaysInstall</td><td>ISX_DEFAULTCOMPONENT5</td></row>
+		<row><td>AlwaysInstall</td><td>LoginManager.Prim_re_Ausgabe</td></row>
+		<row><td>AlwaysInstall</td><td>NewComponent1</td></row>
 		<row><td>AlwaysInstall</td><td>NfcRingCredentialProvider.dll</td></row>
 		<row><td>AlwaysInstall</td><td>NfcRingCredentialProvider.dll1</td></row>
 		<row><td>AlwaysInstall</td><td>RegisterSystem.Primary_output</td></row>
@@ -1917,6 +1923,7 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I4">ISAttributes</col>
 		<col def="S72">ISComponentSubFolder_</col>
+		<row><td>loginmanager.prim_re_ausgabe</td><td>LoginManager.Prim_re_Ausgabe</td><td>LoginManager.Primäre Ausgabe</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;LoginManager&gt;|Built</td><td>3</td><td/></row>
 		<row><td>nfcringcredentialprovider.dl</td><td>NfcRingCredentialProvider.dll</td><td>NFCRIN~1.DLL|NfcRingCredentialProvider.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\_Data\dev\gitHub\NFC-Ring_CredentialProvider\Win32\Release\NfcRingCredentialProvider.dll</td><td>1</td><td/></row>
 		<row><td>nfcringcredentialprovider.dl1</td><td>NfcRingCredentialProvider.dll1</td><td>NFCRIN~1.DLL|NfcRingCredentialProvider.dll</td><td>0</td><td/><td/><td/><td>1</td><td>C:\_Data\dev\gitHub\NFC-Ring_CredentialProvider\x64\Release\NfcRingCredentialProvider.dll</td><td>1</td><td/></row>
 		<row><td>registersystem.primary_outpu</td><td>RegisterSystem.Primary_output</td><td>RegisterSystem.Primary output</td><td>0</td><td/><td/><td/><td>1</td><td>&lt;RegisterSystem1&gt;|Built</td><td>3</td><td/></row>
@@ -2073,6 +2080,8 @@
 		<row><td>ISX_DEFAULTCOMPONENT3</td><td/><td/><td>_0D9DA3DF_E6BC_4F8E_B835_CF6962D91DB8_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT4</td><td/><td/><td>_BDC3A5C0_F3D7_424F_8354_034D1D803609_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>ISX_DEFAULTCOMPONENT5</td><td/><td/><td>_355BEE20_1E66_488D_A8C4_EA78531E2D54_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>LoginManager.Prim_re_Ausgabe</td><td/><td/><td>_3EE775CA_18E4_467C_896C_318E1FEEE020_FILTER</td><td/><td/><td/><td/></row>
+		<row><td>NewComponent1</td><td/><td/><td>_74085E52_2CE7_44DE_8223_53C39DB45EFB_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>NfcRingCredentialProvider.dll</td><td/><td/><td>_ECCD5003_D3B4_4B0A_9EC4_BC1C96478DE2_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>NfcRingCredentialProvider.dll1</td><td/><td/><td>_41521565_EAAF_4F2E_B683_BCD233295901_FILTER</td><td/><td/><td/><td/></row>
 		<row><td>RegisterSystem.Primary_output</td><td/><td/><td>_DD961DF3_A271_414B_A3B3_565317FD9B75_FILTER</td><td/><td/><td/><td/></row>
@@ -2384,6 +2393,7 @@
 		<row><td>ISProductFolder</td><td/><td/><td>1</td></row>
 		<row><td>ISProjectDataFolder</td><td/><td/><td>1</td></row>
 		<row><td>ISProjectFolder</td><td/><td/><td>1</td></row>
+		<row><td>LoginManager</td><td>Manager\LoginManager\LoginManager.csproj</td><td/><td>2</td></row>
 		<row><td>ProgramFilesFolder</td><td/><td/><td>1</td></row>
 		<row><td>RegisterSystem</td><td>RegisterSystem\RegisterSystem.csproj</td><td/><td>2</td></row>
 		<row><td>RegisterSystem1</td><td>Installer\RegisterSystem\RegisterSystem.csproj</td><td/><td>2</td></row>
@@ -2703,7 +2713,7 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-626872568</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-492682865</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1033</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-761076598</td></row>
@@ -3806,10 +3816,11 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>161447504</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>https://github.com/Robinhuett/NFC-Ring_CredentialProvider</td><td>0</td><td/><td>-626861975</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-626872568</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>http://www.RobinTripp.com</td><td>0</td><td/><td>-492682865</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-492682865</td></row>
 		<row><td>ID_STRING4</td><td>1033</td><td>You can report problems at https://github.com/Robinhuett/NFC-Ring_CredentialProvider/issues.</td><td>0</td><td/><td>-626892695</td></row>
-		<row><td>ID_STRING5</td><td>1033</td><td>Config</td><td>0</td><td/><td>-761103346</td></row>
+		<row><td>ID_STRING5</td><td>1033</td><td>CONFIG~1|Config (Alt)</td><td>0</td><td/><td>-492668017</td></row>
+		<row><td>ID_STRING6</td><td>1033</td><td>Config</td><td>0</td><td/><td>-492641393</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>161445456</td></row>
 	</table>
 
@@ -3917,6 +3928,7 @@
 		<col def="S255">ISBuildSourcePath</col>
 		<col def="I2">ISIconIndex</col>
 		<row><td>ARPPRODUCTICON.exe</td><td/><td>&lt;ISProductFolder&gt;\redist\Language Independent\OS Independent\setupicon.ico</td><td>0</td></row>
+		<row><td>UNINST_Uninstall_N_DEDCD8FED6C94727BB32396C6CF82160.exe</td><td/><td>C:\Program Files (x86)\InstallShield\2013LE\Redist\Language Independent\OS Independent\uninstall.ico</td><td>0</td></row>
 		<row><td>_05384D926CAF4917B9B02E151BEAAEBF.exe</td><td/><td>C:\Users\tylermenezes\Desktop\RfidLoginProvider\Manager\TestWizard\obj\Debug\Credential Manager.exe</td><td>0</td></row>
 		<row><td>_1857B016066B4116A8F1C8C4E64AA903.exe</td><td/><td>C:\Users\tylermenezes\Desktop\RfidLoginProvider\Manager\TestWizard\obj\Debug\Credential Manager.exe</td><td>0</td></row>
 		<row><td>_1C8F933A4895442EB5AC2E548FED7098.exe</td><td/><td>C:\Users\tylermenezes\Desktop\RfidLoginProvider\Manager\TestWizard\obj\Release\Credential Manager.exe</td><td>0</td></row>
@@ -4049,8 +4061,8 @@
 		<col def="S0">Value</col>
 		<row><td>ActiveLanguage</td><td>1033</td></row>
 		<row><td>Comments</td><td/></row>
-		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="a4f66fafb30885f14d732b73e196bba0">
-RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
+		<row><td>CurrentMedia</td><td dt:dt="bin.base64" md5="de9f554a3bc05c12be9c31b998217995">
+UwBpAG4AZwBsAGUASQBtAGEAZwBlAAEARQB4AHAAcgBlAHMAcwA=
 			</td></row>
 		<row><td>DefaultProductConfiguration</td><td>Express</td></row>
 		<row><td>ISCompilerOption_CompileBeforeBuild</td><td>1</td></row>
@@ -4096,6 +4108,7 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>FileCost</td><td/><td>900</td><td>FileCost</td><td/></row>
 		<row><td>FindRelatedProducts</td><td/><td>430</td><td>FindRelatedProducts</td><td/></row>
 		<row><td>ISPreventDowngrade</td><td>ISFOUNDNEWERPRODUCTVERSION</td><td>450</td><td>ISPreventDowngrade</td><td/></row>
+		<row><td>InstallWelcome</td><td>Not UITEST And Not Installed</td><td>1110</td><td/><td/></row>
 		<row><td>IsolateComponents</td><td/><td>950</td><td>IsolateComponents</td><td/></row>
 		<row><td>LaunchConditions</td><td>Not Installed</td><td>410</td><td>LaunchConditions</td><td/></row>
 		<row><td>MaintenanceWelcome</td><td>Installed And Not RESUME And Not Preselected And Not PATCH</td><td>1230</td><td>MaintenanceWelcome</td><td/></row>
@@ -4110,7 +4123,6 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SetupInterrupted</td><td/><td>-2</td><td>SetupInterrupted</td><td/></row>
 		<row><td>SetupProgress</td><td/><td>1240</td><td>SetupProgress</td><td/></row>
 		<row><td>SetupResume</td><td>Installed And (RESUME Or Preselected) And Not PATCH</td><td>1220</td><td>SetupResume</td><td/></row>
-		<row><td>SplashBitmap</td><td>Not UITEST And Not Installed</td><td>1110</td><td/><td/></row>
 		<row><td>ValidateProductID</td><td/><td>700</td><td>ValidateProductID</td><td/></row>
 		<row><td>setAllUsersProfile2K</td><td>VersionNT &gt;= 500</td><td>980</td><td/><td/></row>
 		<row><td>setUserProfileNT</td><td>VersionNT</td><td>960</td><td/><td/></row>
@@ -4414,8 +4426,8 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>IS_SQLSERVER_USERNAME</td><td>sa</td><td/></row>
 		<row><td>InstallChoice</td><td>AR</td><td/></row>
 		<row><td>LAUNCHPROGRAM</td><td>1</td><td/></row>
-		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{E6A76BC3-EFEB-41A0-90E8-19642E098AB4}</td><td/></row>
-		<row><td>LAUNCHPROGRAMFILEKEY</td><td>testwizard.primary_output</td><td/></row>
+		<row><td>LAUNCHPROGRAMCOMPCODE</td><td>{BEEBEA5C-5757-494C-9D10-B5C5733DF108}</td><td/></row>
+		<row><td>LAUNCHPROGRAMFILEKEY</td><td>loginmanager.prim_re_ausgabe</td><td/></row>
 		<row><td>LAUNCHREADME</td><td>1</td><td/></row>
 		<row><td>Manufacturer</td><td>##COMPANY_NAME##</td><td/></row>
 		<row><td>PIDKEY</td><td/><td/></row>
@@ -4443,7 +4455,7 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>PROGMSG_IIS_ROLLBACKAPPPOOLS</td><td>##IDS_PROGMSG_IIS_ROLLBACKAPPPOOLS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKVROOTS</td><td>##IDS_PROGMSG_IIS_ROLLBACKVROOTS##</td><td/></row>
 		<row><td>PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS</td><td>##IDS_PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS##</td><td/></row>
-		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]TestWizard.Primary output</td><td/></row>
+		<row><td>PROGRAMFILETOLAUNCHATEND</td><td>[INSTALLDIR]LoginManager.Primäre Ausgabe</td><td/></row>
 		<row><td>ProductCode</td><td>{5A06C596-CEE4-4FC0-9142-5A5D8308ADD9}</td><td/></row>
 		<row><td>ProductName</td><td>NFC-Ring Credential Provider</td><td/></row>
 		<row><td>ProductVersion</td><td>1.10.0000</td><td/></row>
@@ -4528,6 +4540,8 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<col def="s72">DirProperty</col>
 		<col def="i2">InstallMode</col>
 		<row><td>NewShortcut1</td><td>TestWizard.Primary_output</td><td/><td>rfidlo_1_rfid_login_credential_provider</td><td>2</td></row>
+		<row><td>NewShortcut2</td><td>LoginManager.Prim_re_Ausgabe</td><td/><td>rfidlo_1_rfid_login_credential_provider</td><td>2</td></row>
+		<row><td>UNINST_Uninstall_NFC_Ring_Credential_Provider</td><td>NewComponent1</td><td/><td>rfidlo_1_rfid_login_credential_provider</td><td>2</td></row>
 	</table>
 
 	<table name="RemoveIniFile">
@@ -4614,6 +4628,8 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">ISShortcutName</col>
 		<col def="I4">ISAttributes</col>
 		<row><td>NewShortcut1</td><td>rfidlo_1_rfid_login_credential_provider</td><td>##ID_STRING5##</td><td>TestWizard.Primary_output</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>NewShortcut2</td><td>rfidlo_1_rfid_login_credential_provider</td><td>##ID_STRING6##</td><td>LoginManager.Prim_re_Ausgabe</td><td>AlwaysInstall</td><td/><td/><td/><td/><td/><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
+		<row><td>UNINST_Uninstall_NFC_Ring_Credential_Provider</td><td>rfidlo_1_rfid_login_credential_provider</td><td>UNINST|Uninstall NFC-Ring Credential Provider</td><td>NewComponent1</td><td>[SystemFolder]msiexec.exe</td><td>/x {5A06C596-CEE4-4FC0-9142-5A5D8308ADD9}</td><td/><td/><td>UNINST_Uninstall_N_DEDCD8FED6C94727BB32396C6CF82160.exe</td><td>0</td><td>1</td><td/><td/><td/><td/><td/><td/><td/><td/></row>
 	</table>
 
 	<table name="Signature">

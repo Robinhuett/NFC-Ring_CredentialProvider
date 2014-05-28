@@ -30,6 +30,10 @@
 	</ItemGroup>
 	<Import Project="$(MSBuildExtensionsPath32)\InstallShield\2013Limited\InstallShield.targets"/>
 	<ItemGroup>
+		<ProjectReference Include="..\..\Manager\LoginManager\LoginManager.csproj">
+			<Name>LoginManager</Name>
+			<Project>{96DA62B6-3E2C-4A21-B443-C32C22B41A67}</Project>
+		</ProjectReference>
 		<ProjectReference Include="..\RegisterSystem\RegisterSystem.csproj">
 			<Name>RegisterSystem</Name>
 			<Project>{392410E4-C8FF-4E9F-BA6F-D791F95A6CDB}</Project>
