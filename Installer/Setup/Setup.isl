@@ -226,7 +226,6 @@
 		<col key="yes" def="s72">Property</col>
 		<col key="yes" def="s72">Signature_</col>
 		<row><td>DOTNETVERSION40CLIENT</td><td>DotNet40Client</td></row>
-		<row><td>DOTNETVERSION40FULL</td><td>DotNet40Full</td></row>
 	</table>
 
 	<table name="BBControl">
@@ -547,7 +546,7 @@
 		<row><td>InstallChangeFolder</td><td>Tail</td><td>PathEdit</td><td>21</td><td>207</td><td>332</td><td>17</td><td>15</td><td>_BrowseProperty</td><td>##IDS__IsBrowseFolderDlg_11##</td><td>OK</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallChangeFolder</td><td>TailText</td><td>Text</td><td>21</td><td>193</td><td>99</td><td>13</td><td>3</td><td/><td>##IDS__IsBrowseFolderDlg_FolderName##</td><td>Tail</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallChangeFolder</td><td>Up</td><td>PushButton</td><td>310</td><td>66</td><td>19</td><td>19</td><td>3670019</td><td/><td/><td>NewFolder</td><td>##IDS__IsBrowseFolderDlg_UpOneLevel##</td><td>0</td><td/><td/><td>NewBinary3</td></row>
-		<row><td>InstallWelcome</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>1</td><td/><td>##IDS_BACK##</td><td>Copyright</td><td/><td>0</td><td/><td/><td/></row>
+		<row><td>InstallWelcome</td><td>Back</td><td>PushButton</td><td>164</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_BACK##</td><td>Copyright</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>PushButton</td><td>301</td><td>243</td><td>66</td><td>17</td><td>3</td><td/><td>##IDS_CANCEL##</td><td>Back</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>Copyright</td><td>Text</td><td>135</td><td>144</td><td>228</td><td>73</td><td>65539</td><td/><td>##IDS__IsWelcomeDlg_WarningCopyright##</td><td>Next</td><td/><td>0</td><td/><td/><td/></row>
 		<row><td>InstallWelcome</td><td>DlgLine</td><td>Line</td><td>0</td><td>234</td><td>374</td><td>0</td><td>1</td><td/><td/><td/><td/><td>0</td><td/><td/><td/></row>
@@ -950,7 +949,7 @@
 		<row><td>InstallChangeFolder</td><td>OK</td><td>EndDialog</td><td>Return</td><td>1</td><td>3</td></row>
 		<row><td>InstallChangeFolder</td><td>OK</td><td>SetTargetPath</td><td>[_BrowseProperty]</td><td>1</td><td>2</td></row>
 		<row><td>InstallChangeFolder</td><td>Up</td><td>DirectoryListUp</td><td>0</td><td>1</td><td>0</td></row>
-		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>Display_IsBitmapDlg</td><td>0</td></row>
+		<row><td>InstallWelcome</td><td>Back</td><td>NewDialog</td><td>SplashBitmap</td><td>NOT Installed</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Cancel</td><td>SpawnDialog</td><td>CancelSetup</td><td>1</td><td>0</td></row>
 		<row><td>InstallWelcome</td><td>Next</td><td>EndDialog</td><td>Return</td><td>OutOfDiskSpace &lt;&gt; 1</td><td>1</td></row>
 		<row><td>InstallWelcome</td><td>Next</td><td>NewDialog</td><td>ReadyToInstall</td><td>0</td><td>1</td></row>
@@ -2669,8 +2668,8 @@
 		<col def="I2">Order</col>
 		<col def="I2">ISSetupLocation</col>
 		<col def="S255">ISReleaseFlags</col>
-		<row><td>_04DF12B4_0B85_4B80_8CC8_44235CCB94AC_</td><td>Microsoft Visual C++ 2010 Redistributable Package (x86).prq</td><td/><td/><td/></row>
-		<row><td>_BB5A9AB7_875E_4C01_9C05_406CB0811BE4_</td><td>Microsoft .NET Framework 4.0 Client.prq</td><td/><td/><td/></row>
+		<row><td>_04DF12B4_0B85_4B80_8CC8_44235CCB94AC_</td><td>Microsoft Visual C++ 2010 Redistributable Package (x86).prq</td><td/><td>2</td><td/></row>
+		<row><td>_BB5A9AB7_875E_4C01_9C05_406CB0811BE4_</td><td>Microsoft .NET Framework 4.0 Client.prq</td><td/><td>2</td><td/></row>
 	</table>
 
 	<table name="ISSetupType">
@@ -2704,11 +2703,10 @@
 		<col def="I2">Encoded</col>
 		<col def="S0">Comment</col>
 		<col def="I4">TimeStamp</col>
-		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761074706</td></row>
+		<row><td>COMPANY_NAME</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-626872568</td></row>
 		<row><td>DN_AlwaysInstall</td><td>1033</td><td>Always Install</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_COLOR</td><td>1033</td><td>The color settings of your system are not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT</td><td>1033</td><td>Microsoft .NET Framework 4.0 Client Package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-761076598</td></row>
-		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL</td><td>1033</td><td>Microsoft .NET Framework 4.0 Full package or greater needs to be installed for this installation to continue.</td><td>0</td><td/><td>-761080694</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_OS</td><td>1033</td><td>The operating system is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_PROCESSOR</td><td>1033</td><td>The processor is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDPROP_EXPRESS_LAUNCH_CONDITION_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
@@ -3808,9 +3806,9 @@
 		<row><td>IDS__TargetReq_DESC_RAM</td><td>1033</td><td>The amount of RAM is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>IDS__TargetReq_DESC_RESOLUTION</td><td>1033</td><td>The screen resolution is not adequate for running [ProductName].</td><td>0</td><td/><td>161445456</td></row>
 		<row><td>ID_STRING1</td><td>1033</td><td/><td>0</td><td/><td>161447504</td></row>
-		<row><td>ID_STRING2</td><td>1033</td><td>http://www.RobinTripp.com</td><td>0</td><td/><td>-761074706</td></row>
-		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-761074706</td></row>
-		<row><td>ID_STRING4</td><td>1033</td><td>Contact tyler@menez.es for any problems.</td><td>0</td><td/><td>161460401</td></row>
+		<row><td>ID_STRING2</td><td>1033</td><td>https://github.com/Robinhuett/NFC-Ring_CredentialProvider</td><td>0</td><td/><td>-626861975</td></row>
+		<row><td>ID_STRING3</td><td>1033</td><td>Robin Tripp</td><td>0</td><td/><td>-626872568</td></row>
+		<row><td>ID_STRING4</td><td>1033</td><td>You can report problems at https://github.com/Robinhuett/NFC-Ring_CredentialProvider/issues.</td><td>0</td><td/><td>-626892695</td></row>
 		<row><td>ID_STRING5</td><td>1033</td><td>Config</td><td>0</td><td/><td>-761103346</td></row>
 		<row><td>IIDS_UITEXT_FeatureUninstalled</td><td>1033</td><td>This feature will remain uninstalled.</td><td>0</td><td/><td>161445456</td></row>
 	</table>
@@ -4068,7 +4066,7 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>ISTheme</td><td>InstallShield Blue.theme</td></row>
 		<row><td>ISUSLock</td><td>{DB89495D-1C76-482A-BC5F-74F8A57FB1E2}</td></row>
 		<row><td>ISUSSignature</td><td>{1672CDF9-476F-4C83-AA40-F7EBDDB7F57F}</td></row>
-		<row><td>ISVisitedViews</td><td>viewAssistant,viewAppFiles,viewSetupTypes,viewUpgradePaths,viewRealSetupDesign,viewProject,viewSetupDesign,viewUpdateService,viewObjects,viewDependencies,viewCE,viewShortcuts,viewRegistry,viewIniFiles,viewTextFiles,viewXMLConfig,viewFileExtensions,viewEnvironmentVariables,viewVRoots,viewUI,viewBillboards,viewTextMessages,viewSystemSearch,viewInstallScriptStd,viewCustomActions,viewSupportFiles,viewRelease,viewDesignPatches,viewFeatureFiles,viewSQLServer,viewComponentServices,viewISToday</td></row>
+		<row><td>ISVisitedViews</td><td>viewAssistant,viewAppFiles,viewSetupTypes,viewUpgradePaths,viewRealSetupDesign,viewProject,viewSetupDesign,viewUpdateService,viewObjects,viewDependencies,viewCE,viewShortcuts,viewRegistry,viewIniFiles,viewTextFiles,viewXMLConfig,viewFileExtensions,viewEnvironmentVariables,viewVRoots,viewUI,viewBillboards,viewTextMessages,viewSystemSearch,viewInstallScriptStd,viewCustomActions,viewSupportFiles,viewRelease,viewDesignPatches,viewFeatureFiles,viewSQLServer,viewComponentServices,viewISToday,viewServices</td></row>
 		<row><td>Limited</td><td>1</td></row>
 		<row><td>LockPermissionMode</td><td>1</td></row>
 		<row><td>MsiExecCmdLineOptions</td><td/></row>
@@ -4098,7 +4096,6 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>FileCost</td><td/><td>900</td><td>FileCost</td><td/></row>
 		<row><td>FindRelatedProducts</td><td/><td>430</td><td>FindRelatedProducts</td><td/></row>
 		<row><td>ISPreventDowngrade</td><td>ISFOUNDNEWERPRODUCTVERSION</td><td>450</td><td>ISPreventDowngrade</td><td/></row>
-		<row><td>InstallWelcome</td><td>Not Installed</td><td>1210</td><td>InstallWelcome</td><td/></row>
 		<row><td>IsolateComponents</td><td/><td>950</td><td>IsolateComponents</td><td/></row>
 		<row><td>LaunchConditions</td><td>Not Installed</td><td>410</td><td>LaunchConditions</td><td/></row>
 		<row><td>MaintenanceWelcome</td><td>Installed And Not RESUME And Not Preselected And Not PATCH</td><td>1230</td><td>MaintenanceWelcome</td><td/></row>
@@ -4113,6 +4110,7 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SetupInterrupted</td><td/><td>-2</td><td>SetupInterrupted</td><td/></row>
 		<row><td>SetupProgress</td><td/><td>1240</td><td>SetupProgress</td><td/></row>
 		<row><td>SetupResume</td><td>Installed And (RESUME Or Preselected) And Not PATCH</td><td>1220</td><td>SetupResume</td><td/></row>
+		<row><td>SplashBitmap</td><td>Not UITEST And Not Installed</td><td>1110</td><td/><td/></row>
 		<row><td>ValidateProductID</td><td/><td>700</td><td>ValidateProductID</td><td/></row>
 		<row><td>setAllUsersProfile2K</td><td>VersionNT &gt;= 500</td><td>980</td><td/><td/></row>
 		<row><td>setUserProfileNT</td><td>VersionNT</td><td>960</td><td/><td/></row>
@@ -4128,7 +4126,6 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<col def="l255">Description</col>
 		<row><td>(Not Version9X) And (Not VersionNT=400) And (Not VersionNT=500) And (Not VersionNT=501) And (Not VersionNT=502)</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_OS##</td></row>
 		<row><td>DOTNETVERSION40CLIENT&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40CLIENT##</td></row>
-		<row><td>DOTNETVERSION40FULL&gt;="#1"</td><td>##IDPROP_EXPRESS_LAUNCH_CONDITION_DOTNETVERSION40FULL##</td></row>
 	</table>
 
 	<table name="ListBox">
@@ -4462,7 +4459,7 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<row><td>SERIALNUMBER</td><td/><td/></row>
 		<row><td>SERIALNUMVALSUCCESSRETVAL</td><td>1</td><td/></row>
 		<row><td>SHOWLAUNCHPROGRAM</td><td>-1</td><td/></row>
-		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION40FULL;DOTNETVERSION40CLIENT</td><td/></row>
+		<row><td>SecureCustomProperties</td><td>ISFOUNDNEWERPRODUCTVERSION;USERNAME;COMPANYNAME;ISX_SERIALNUM;SUPPORTDIR;DOTNETVERSION40CLIENT</td><td/></row>
 		<row><td>SelectedSetupType</td><td>##IDS__DisplayName_Typical##</td><td/></row>
 		<row><td>SetupType</td><td>Typical</td><td/></row>
 		<row><td>UpgradeCode</td><td>{FBD982B5-DAC3-4169-B8F3-222489193025}</td><td/></row>
@@ -4508,7 +4505,6 @@ RABWAEQALQA1AAEARQB4AHAAcgBlAHMAcwA=
 		<col def="S255">Name</col>
 		<col def="I2">Type</col>
 		<row><td>DotNet40Client</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Client</td><td>Install</td><td>2</td></row>
-		<row><td>DotNet40Full</td><td>2</td><td>SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full</td><td>Install</td><td>2</td></row>
 	</table>
 
 	<table name="Registry">
