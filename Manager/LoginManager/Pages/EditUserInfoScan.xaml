@@ -1,0 +1,60 @@
+﻿<UserControl x:Class="LoginManager.EditUserInfoScan"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:p="clr-namespace:LoginManager.Properties"
+             xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" Unloaded="UserControl_Unloaded" Loaded="UserControl_Loaded">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        
+        <TextBlock Grid.Row="0"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="{x:Static p:Resources.EditUserInfoScan_Message}" />
+        <Rectangle Grid.Row="1"
+                   Margin="20"
+                   Fill="{DynamicResource AccentColorBrush}">
+            <Rectangle.OpacityMask>
+                <VisualBrush Visual="{StaticResource appbar_nfc}" Stretch="Uniform" />
+            </Rectangle.OpacityMask>
+        </Rectangle>
+
+        <StackPanel Grid.Column="1" Grid.Row="2"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="10"
+                    VerticalAlignment="Bottom">
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.General_Save}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Click="ButtonSave_Click">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_check}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.General_Cancel}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Click="ButtonCancel_Click">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_cancel}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

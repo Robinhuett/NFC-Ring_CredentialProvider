@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="LoginManager.EditUserInfoFailure"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:w="clr-namespace:LoginManager"
+             xmlns:p="clr-namespace:LoginManager.Properties"
+             xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d"
+             Name="editUserInfoFailure">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="w:Commands.comSettings" CanExecute="comSettings_CanExecute" Executed="comSettings_Executed" />
+        <CommandBinding Command="w:Commands.comClose" CanExecute="comClose_CanExecute" Executed="comClose_Executed" />
+    </UserControl.CommandBindings>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0"
+                   Margin="10"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Text="{x:Static p:Resources.EditUserInfoFailure_Message}" />
+        <TextBlock Grid.Row="1"
+                   Margin="10,-5,10,10"
+                   HorizontalAlignment="Center"
+                   TextWrapping="Wrap"
+                   Visibility="Collapsed"
+                   Name="editUserInfoFailure_Error"
+                   Text="{Binding ElementName=editUserInfoFailure, Path=error, UpdateSourceTrigger=PropertyChanged}" />
+        <Rectangle Grid.Row="2"
+                   Margin="20"
+                   Fill="{DynamicResource AccentColorBrush}">
+            <Rectangle.OpacityMask>
+                <VisualBrush Visual="{StaticResource appbar_thumbs_down}" Stretch="Uniform" />
+            </Rectangle.OpacityMask>
+        </Rectangle>
+
+        <StackPanel Grid.Column="1" Grid.Row="3"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="10"
+                    VerticalAlignment="Bottom">
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.Main_Settings}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Command="w:Commands.comSettings">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_cogs}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.General_Close}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Command="w:Commands.comClose">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_cancel}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>

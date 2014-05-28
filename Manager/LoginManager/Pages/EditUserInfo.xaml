@@ -1,0 +1,87 @@
+﻿<UserControl x:Class="LoginManager.EditUserInfo"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:w="clr-namespace:LoginManager"
+             xmlns:p="clr-namespace:LoginManager.Properties"
+             xmlns:controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+             mc:Ignorable="d" 
+             Name="pageEditUserInfo">
+    <UserControl.CommandBindings>
+        <CommandBinding Command="w:Commands.comSaveCredentials" Executed="comSaveCredentials_Executed" CanExecute="comSaveCredentials_CanExecute" />
+        <CommandBinding Command="w:Commands.comCancel" Executed="comCancel_Executed" CanExecute="comCancel_CanExecute" />
+    </UserControl.CommandBindings>
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Column="0" Grid.Row="0"
+                   Margin="10"
+                   VerticalAlignment="Center"
+                   Text="{x:Static p:Resources.EditUserInfo_Username}" />
+        <TextBox Grid.Column="1" Grid.Row="0"
+                 Margin="10,10,10,5"
+                 HorizontalAlignment="Stretch"
+                 Text="{Binding ElementName=pageEditUserInfo, Path=username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <TextBlock Grid.Column="0" Grid.Row="1"
+                   Margin="10"
+                   VerticalAlignment="Center"
+                   Text="{x:Static p:Resources.EditUserInfo_Password}" />
+        <TextBox Grid.Column="1" Grid.Row="1"
+                 Margin="10,5,10,5"
+                 HorizontalAlignment="Stretch"
+                 Text="{Binding ElementName=pageEditUserInfo, Path=password, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        
+        <TextBlock Grid.Column="0" Grid.Row="2"
+                   Margin="10"
+                   VerticalAlignment="Center"
+                   Text="{x:Static p:Resources.EditUserInfo_Domain}" />
+        <TextBox Grid.Column="1" Grid.Row="2"
+                 Margin="10,5,10,5"
+                 HorizontalAlignment="Stretch"
+                 Text="{Binding ElementName=pageEditUserInfo, Path=domain, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+
+        <StackPanel Grid.Column="1" Grid.Row="4"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Right"
+                    Margin="10"
+                    VerticalAlignment="Bottom">
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.General_Save}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Command="w:Commands.comSaveCredentials">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_check}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+            <Button Width="35" Height="35"
+                    ToolTip="{x:Static p:Resources.General_Cancel}"
+                    Style="{DynamicResource MetroCircleButtonStyle}"
+                    Command="w:Commands.comCancel">
+                <Rectangle Width="15" Height="15"
+                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}">
+                    <Rectangle.OpacityMask>
+                        <VisualBrush Stretch="Uniform"
+                                     Visual="{StaticResource appbar_cancel}" />
+                    </Rectangle.OpacityMask>
+                </Rectangle>
+            </Button>
+        </StackPanel>
+    </Grid>
+</UserControl>
