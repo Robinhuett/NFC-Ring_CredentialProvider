@@ -9,8 +9,9 @@ In contrast to the other forks this centered around the NFC-Ring (http://nfcring
 ##Goals
 
  - Increase ease of use. Maybe with an small config application?
- - Eventualy edit login mechanism to store the credentials on the NFC Ring (it has only 144bytes).
- - Add the option for translations
+ - Eventualy edit login mechanism to store the credentials on the NFC Ring (it has only 144bytes). - Should work the way it is.
+ - Add an Option for a connection without COM-Ports (for Windows 8).
+ - Add the option for translations.
 
 
 ##Credits
