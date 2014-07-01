@@ -1,5 +1,7 @@
 #NFC-Ring_CredentialProvider
 
+Even if there are currently no contributions to this repo, doesn't mean im not working on it. I'm currently rebuilding the Login-Manager to be the main application to offer an easier handling of "the whole thing" (See Goals, Point one) ;)
+
 ##Summary
 
 This CP (Credential Provider) allows login to Windows with an RFID Reader.
